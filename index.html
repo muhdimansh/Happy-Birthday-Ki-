@@ -1,86 +1,28 @@
 <!doctype html>
-<html lang="ms">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#2b1d2b">
-<title>Teka-Teki Hari Jadi ♡</title>
+<html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#241a28"><title>Tiga Perkara Istimewa — Misteri 8 Bab</title>
 <style>
-:root{--bg:#1b1420;--card:#2b2030;--pink:#f0b7c8;--cream:#fff4ed;--muted:#d5c4d0;--gold:#f0d8a2}
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#493044,#1b1420 65%);color:var(--cream);font:16px/1.6 system-ui,-apple-system,sans-serif;padding:20px}
-main{max-width:620px;margin:auto}
-header{text-align:center;padding:25px 10px}
-header .heart{font-size:2rem;color:var(--pink)}
-h1,h2{font-family:Georgia,serif;font-weight:500}
-h1{font-size:clamp(2rem,8vw,3rem);line-height:1.1;margin:8px 0}
-header p{color:var(--muted)}
-.status{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.9rem;margin-bottom:10px}
-.track{height:5px;background:#514052;border-radius:20px;overflow:hidden;margin-bottom:18px}
-#progress{height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--gold));transition:width .3s}
-.card{background:var(--card);border:1px solid #62465a;border-radius:20px;padding:clamp(20px,5vw,30px);box-shadow:0 15px 45px #0003}
-.eyebrow{color:var(--pink);font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;font-weight:700}
-h2{font-size:2rem;margin:5px 0 12px}
-.clue{background:#1d1722;border:1px dashed #806078;border-radius:14px;padding:17px;text-align:center;margin:18px 0;color:var(--gold);font-size:1.05rem}
-label{font-weight:650}
-input{display:block;width:100%;margin-top:8px;padding:14px;border-radius:12px;border:1px solid #806078;background:#1d1722;color:white;font:inherit}
-button{border:0;border-radius:12px;padding:13px 18px;font:700 1rem system-ui;cursor:pointer}
-.primary{background:var(--pink);color:#2b1d2b;width:100%;margin-top:12px}
-#feedback{min-height:28px;margin-top:12px}
-.bad{color:#ffb1b1}.good{color:#b8edc2}
-footer{text-align:center;color:#a996a8;font-size:.8rem;padding:22px}
-.final{text-align:center}.gift{border:1px solid #62465a;border-radius:13px;padding:12px;margin:10px 0;background:#211925;font-size:1.1rem}
-@media(max-width:420px){body{padding:12px}.status{font-size:.8rem}}
-</style>
-</head>
-<body>
-<main>
-<header>
-<div class="heart">♡</div>
-<div class="eyebrow">Sesuatu yang istimewa untuk awak</div>
-<h1>Teka-Teki Hari Jadi</h1>
-<p>Selesaikan teka-teki satu demi satu untuk buka kejutan kecil ini. ♡</p>
-</header>
-<div class="status"><span id="chapter">Bab 1 daripada 3</span><span id="points">Markah: 100</span></div>
-<div class="track"><div id="progress"></div></div>
-<section class="card" id="game" aria-live="polite"></section>
-<footer>Dibuat dengan kasih sayang ♡</footer>
-</main>
+:root{--rose:#e8a6b6;--cream:#fff3e8;--muted:#c6b6c4;--gold:#e7c98a;--good:#a9d6b2;--bad:#f2a3a3}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#3a2638,#17131b 68%);color:var(--cream);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}.wrap{width:min(780px,100%);margin:auto;padding:22px 15px 48px}.top{text-align:center;padding:18px 7px 25px}.eyebrow,.chapter{color:var(--rose);text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;font-weight:750}.heart,.bigheart{color:var(--rose);font-size:2rem}.top h1,.card h2{font-family:Georgia,serif;font-weight:500;line-height:1.1}.top h1{font-size:clamp(2rem,8vw,3.4rem);margin:8px 0 12px}.top p{color:var(--muted);max-width:570px;margin:auto}.stats{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.84rem;margin-bottom:12px}.progress{height:5px;background:#493747;border-radius:99px;overflow:hidden;margin-bottom:20px}.bar{height:100%;background:linear-gradient(90deg,var(--rose),var(--gold));width:0%;transition:width .3s}.card{background:linear-gradient(145deg,#302432,#231c27);border:1px solid #604252;border-radius:22px;padding:clamp(18px,5vw,30px);box-shadow:0 18px 55px #0003}.card h2{font-size:clamp(1.6rem,6vw,2.25rem);margin:8px 0 14px}.cipher{padding:16px 12px;text-align:center;border-radius:14px;background:#19151d;border:1px dashed #765267;color:var(--gold);font:700 clamp(1.1rem,4vw,1.6rem) ui-monospace,monospace;letter-spacing:.12em;overflow-wrap:anywhere;margin:18px 0}.riddle,.evidence{padding:14px 15px;background:#1c1720;border:1px solid #493747;border-radius:12px;margin:13px 0}.riddle strong,.evidence strong{color:var(--gold)}input{width:100%;border:1px solid #765267;background:#17131b;color:var(--cream);border-radius:12px;padding:13px 14px;font:inherit;min-width:0}input:focus{outline:2px solid var(--rose)}.inputrow{display:flex;gap:9px;margin-top:14px}.inputrow input{flex:1}button{border:0;border-radius:12px;padding:12px 16px;font:700 .95rem system-ui;cursor:pointer}button:disabled{opacity:.55;cursor:wait}.primary{background:var(--rose);color:#281923}.secondary{background:#463344;color:var(--cream);border:1px solid #765267}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.feedback{min-height:25px;margin-top:10px;font-size:.92rem}.good{color:var(--good)}.bad{color:var(--bad)}.hintbox{margin-top:14px;padding:13px;border-left:3px solid var(--gold);background:#17131b;color:var(--gold);border-radius:0 10px 10px 0}.hidden{display:none}.final{text-align:center}.gift{padding:15px;text-align:left;background:#1c1720;border:1px solid #604252;border-radius:13px;margin:11px 0}.gift h3{font:1.35rem Georgia,serif;color:var(--rose);margin:0}.seal{display:inline-block;border:1px solid #765267;color:var(--gold);padding:4px 10px;border-radius:999px;font-size:.75rem}.footer{text-align:center;color:#8e7d8d;font-size:.78rem;margin-top:18px}.keys{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.key{border:1px solid #765267;border-radius:999px;padding:4px 9px;color:var(--gold);font-size:.78rem}@media(max-width:480px){.wrap{padding:12px}.inputrow{flex-direction:column}.stats{font-size:.78rem}}
+</style></head><body><div class="wrap">
+<header class="top"><div class="eyebrow">Sebuah misteri yang dicipta khas untukmu</div><div class="heart">♡</div><h1>Tiga Perkara Istimewa</h1><p>Delapan bab. Satu rahsia. Setiap jawapan menjadi kunci untuk bab seterusnya. Jangan terburu-buru — semua petunjuk saling berkait.</p></header>
+<div class="stats"><span id="stage">Bab 1 daripada 8</span><span>Markah: <b id="score">100</b></span></div><div class="progress"><div class="bar" id="bar"></div></div><main id="game" class="card" aria-live="polite"></main><div class="footer">Dibuat dengan penuh kasih ♡</div></div>
 <script>
-const puzzles=[
- {title:"Halaman yang menyimpan cerita",clue:"Aku ada banyak halaman tetapi bukan pokok. Aku boleh membawa ilmu, cerita dan idea tanpa bersuara. Apakah aku?",answers:["BUKU"],hint:"Kau boleh membaca aku.",success:"Betul! Satu kejutan berjaya dibuka. ♡"},
- {title:"Bunyi untuk telinga",clue:"Aku membantu kau mendengar lagu secara peribadi. Aku biasanya dipakai pada atau di telinga. Apakah aku?",answers:["EARPHONE","EARPHONES"],hint:"Aku digunakan untuk mendengar muzik.",success:"Tepat! Satu lagi kejutan menanti. ♡"},
- {title:"Teman setiap langkah",clue:"Aku dipakai pada kaki ketika berjalan. Aku melindungi tapak kaki dan datang berpasangan. Apakah aku?",answers:["KASUT","SEPASANG KASUT"],hint:"Kau pakai aku sebelum keluar berjalan.",success:"Betul! Semua teka-teki telah selesai. ♡"}
+const chapters=[
+{label:"Bab 1 · Isyarat pertama",title:"Surat yang tersasar",body:"Di dalam sampul pertama ada mesej yang hurufnya telah digerakkan <b>tiga tempat ke hadapan</b> dalam abjad. Undurkan setiap huruf tiga tempat untuk membaca mesej. Jawapan ini akan menjadi arahan pertama kamu.",cipher:"WHQDQJ",q:"Apakah perkataan yang tersembunyi?",answers:["TENANG"],hint:"W menjadi T, H menjadi E, Q menjadi N. Teruskan kaedah yang sama.",success:"Kunci 1: TENANG. Simpan perkataan ini. Ia juga nama yang mungkin kamu temui semula."},
+{label:"Bab 2 · Kunci nombor",title:"Nombor tidak berbohong",body:"Surat itu menyebut bahawa ketenangan bukan penamat, tetapi permulaan. Gunakan kod <b>A = 1, B = 2, … Z = 26</b> untuk membaca nombor ini. Perkataan yang terhasil menerangkan apa yang perlu dibuat seterusnya.",cipher:"4 · 5 · 14 · 7 · 1 · 18",q:"Apakah perkataan yang tersembunyi?",answers:["DENGAR"],hint:"4 = D, 5 = E, 14 = N. Teruskan sehingga terbentuk perkataan enam huruf.",success:"Kunci 2: DENGAR. Sekarang kamu tahu cara menerima petunjuk seterusnya."},
+{label:"Bab 3 · Suara tanpa wajah",title:"Yang dekat walau jauh",body:"Kamu perlu mencari benda yang berkait dengan perkataan <b>DENGAR</b>. Selesaikan teka-teki ini. Jawapanmu akan membuka petunjuk seterusnya.",q:"Aku membawa muzik dan suara ke telingamu. Aku boleh menemanimu di tempat ramai, tetapi aku tidak bercakap sendiri. Apakah aku?",answers:["EARPHONE","EARPHONES","FON TELINGA","FON TELINGA"],hint:"Ia biasanya mempunyai dua bahagian kecil untuk telinga dan disambungkan kepada telefon.",success:"Kunci 3: EARPHONE. Ingat objek ini, tetapi jangan simpulkan semuanya lagi."},
+{label:"Bab 4 · Jejak di lantai",title:"Setiap perjalanan bermula",body:"Di sebelah petunjuk earphone ada satu ayat: “Bukan semua yang menemani perjalanan perlu bersuara.” Cari objek yang berkait dengan <b>langkah</b> dan selesaikan teka-teki ini.",q:"Aku bergerak bersamamu, tetapi aku tidak memilih destinasi. Aku menyentuh tanah setiap kali kamu melangkah. Apakah aku?",answers:["KASUT","SHOES","NEW BALANCE","NEWBALANCE"],hint:"Kamu memakainya pada kaki sebelum keluar berjalan.",success:"Kunci 4: KASUT. Dua objek sudah dikenal pasti, tetapi misteri belum selesai."},
+{label:"Bab 5 · Kod yang berulang",title:"Temui huruf yang hilang",body:"Kedua-dua jawapan sebelumnya memberi petunjuk: satu untuk telinga dan satu untuk kaki. Sekarang kembali kepada kod nombor. Gunakan A = 1 hingga Z = 26.",cipher:"2 · 21 · 11 · 21",q:"Apakah perkataan empat huruf ini dalam Bahasa Melayu?",answers:["BUKU"],hint:"2 = B, 21 = U, 11 = K, 21 = U.",success:"Kunci 5: BUKU. Kamu telah menemui jenis hadiah ketiga. Sekarang cari tajuknya."},
+{label:"Bab 6 · Halaman yang tenang",title:"Tajuk di sebalik halaman",body:"Bab pertama memberi kamu perkataan <b>TENANG</b>, dan bab kelima memberi kamu <b>BUKU</b>. Gabungkan kedua-duanya untuk membentuk petunjuk baharu.",q:"Apakah tajuk buku yang tersembunyi?",answers:["BUKU TENANG","TENANG"],hint:"Tajuknya ialah perkataan yang kamu pecahkan dalam Bab 1.",success:"Kunci 6: BUKU TENANG. Sekarang kamu tahu hadiah ketiga dengan lebih jelas."},
+{label:"Bab 7 · Hubungkan semuanya",title:"Tiga petunjuk, satu cerita",body:"Kamu sudah menemui tiga idea: <b>DENGAR</b>, <b>LANGKAH</b> dan <b>TENANG</b>. Padankan setiap idea dengan hadiahnya: objek untuk telinga, objek untuk kaki, dan sesuatu untuk dibaca. Masukkan tiga jawapan dalam urutan yang diminta.",q:"Taip jawapan dalam susunan ini: buku, objek telinga, objek kaki.",answers:["BUKU EARPHONE KASUT","BUKU FON TELINGA KASUT","BUKU EARPHONES KASUT","BUKU TENANG EARPHONE KASUT","BUKU TENANG FON TELINGA KASUT"],hint:"Gunakan jawapan daripada Bab 3, Bab 4 dan Bab 6. Susun ikut arahan soalan: buku dahulu, kemudian earphone, kemudian kasut.",success:"Kunci 7: Tiga hadiah telah dikenal pasti. Hanya sampul terakhir yang tinggal."},
+{label:"Bab 8 · Sampul terakhir",title:"Rahsia di sebalik hadiah",body:"Kamu berjaya menghubungkan semua petunjuk. Masukkan frasa akhir untuk membuka pendedahan. Ini bukan sekadar senarai barang — setiap satu dipilih dengan satu harapan baik untukmu.",q:"Apakah frasa akhir rahsia ini? (3 hadiah)",answers:["BUKU EARPHONE KASUT","BUKU TENANG EARPHONE KASUT","BUKU TENANG FON TELINGA KASUT","BUKU FON TELINGA KASUT"],hint:"Tiga hadiah itu ialah sebuah buku, earphone dan kasut. Buku itu bertajuk Tenang.",success:"Sampul terakhir terbuka. Selamat hari lahir!"}
 ];
-let current=0,score=100,hinted=new Set(),locked=false;
-const game=document.getElementById("game");
-function norm(s){return s.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^A-Z0-9]/g,"")}
-function stats(){document.getElementById("chapter").textContent=current<3?`Bab ${current+1} daripada 3`:"Selesai!";document.getElementById("points").textContent=`Markah: ${score}`;document.getElementById("progress").style.width=(current/3*100)+"%"}
-function render(){
- stats();
- if(current>=3){game.innerHTML=`<div class="final"><div class="heart">♡</div><div class="eyebrow">Misteri selesai</div><h2>Selamat Hari Jadi!</h2><p>Tiga jawapan, tiga kejutan kecil untuk awak.</p><div class="gift">♡ BUKU</div><div class="gift">♡ EARPHONE</div><div class="gift">♡ KASUT</div><p>Semoga hari awak dipenuhi kegembiraan dan ketenangan.</p><button class="primary" onclick="location.reload()">Main semula</button></div>`;document.getElementById("progress").style.width="100%";return}
- const p=puzzles[current];
- game.innerHTML=`<div class="eyebrow">Bab ${current+1}</div><h2>${p.title}</h2><p>Selesaikan teka-teki ini untuk meneruskan.</p><div class="clue">${p.clue}</div><label for="answer">Jawapan awak</label><input id="answer" placeholder="Taip jawapan di sini..." autocomplete="off"><button class="primary" id="check">Semak jawapan</button><button class="primary" id="hint" style="background:transparent;border:1px solid #806078;color:var(--cream);margin-top:8px">Petunjuk (−10 markah)</button><div id="feedback" role="status"></div><div id="hinttext" style="color:var(--gold)"></div>`;
- const input=document.getElementById("answer");
- document.getElementById("check").addEventListener("click",checkAnswer);
- input.addEventListener("keydown",e=>{if(e.key==="Enter")checkAnswer()});
- document.getElementById("hint").addEventListener("click",showHint);
-}
-function checkAnswer(){
- if(locked)return;
- const p=puzzles[current],value=norm(document.getElementById("answer").value),f=document.getElementById("feedback");
- if(!value){f.className="bad";f.textContent="Taip jawapan dahulu ya.";return}
- if(p.answers.some(a=>norm(a)===value)){
-  locked=true;f.className="good";f.textContent=p.success;
-  document.getElementById("check").disabled=true;
-  setTimeout(()=>{current++;locked=false;render()},900);
- }else{f.className="bad";f.textContent="Belum betul lagi. Cuba sekali lagi!";document.getElementById("answer").focus()}
-}
-function showHint(){
- if(!hinted.has(current)){score=Math.max(0,score-10);hinted.add(current);stats()}
- document.getElementById("hinttext").textContent=puzzles[current].hint;
-}
-render();
-</script>
-</body>
-</html>
+let i=0,score=100,used=new Set(),transitionPending=false;const game=document.getElementById("game");
+function norm(s){return s.toUpperCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").replace(/[^A-Z0-9]/g,"")}
+function stats(){document.getElementById("stage").textContent=i<8?`Bab ${i+1} daripada 8`:"Misteri selesai";document.getElementById("score").textContent=score;document.getElementById("bar").style.width=(i/8*100)+"%"}
+function show(){transitionPending=false;stats();if(i>=8){finale();return}let c=chapters[i],h=`<div class="chapter">${c.label}</div><h2>${c.title}</h2><p>${c.body}</p>`;if(c.cipher)h+=`<div class="cipher">${c.cipher}</div>`;if(c.q)h+=`<b>${c.q}</b><div class="inputrow"><input id="answer" placeholder="Taip jawapan…" autocomplete="off"><button class="primary" onclick="check()">Semak jawapan</button></div><div class="actions"><button class="secondary" onclick="hint()">Buka petunjuk (−10 markah)</button></div>`;h+=`<div id="feedback" class="feedback"></div><div id="hintbox" class="hintbox hidden"></div>`;game.innerHTML=h;let a=document.getElementById("answer");a.addEventListener("keydown",e=>{if(e.key==="Enter")check()})}
+function hint(){if(!used.has(i)){score=Math.max(0,score-10);used.add(i);stats()}let h=document.getElementById("hintbox");h.textContent=chapters[i].hint;h.classList.remove("hidden")}
+function check(){if(transitionPending)return;let c=chapters[i],input=document.getElementById("answer"),v=norm(input.value),f=document.getElementById("feedback");if(!v){f.textContent="Sila masukkan jawapan dahulu.";f.className="feedback bad";input.focus();return}if(c.answers.some(a=>norm(a)===v)){transitionPending=true;f.textContent=c.success;f.className="feedback good";input.disabled=true;document.querySelector(".inputrow button").disabled=true;setTimeout(()=>{i++;show()},950)}else{f.textContent="Jawapan belum tepat. Bab ini masih terkunci — semak petunjuk dan cuba lagi.";f.className="feedback bad";input.focus();input.select()}}
+function finale(){stats();document.getElementById("bar").style.width="100%";game.innerHTML=`<div class="final"><div class="bigheart">♡</div><div class="chapter">Misteri terungkai</div><h2>Tiga hadiah, satu harapan</h2><p>Kamu berjaya menghubungkan semua petunjuk. Ini hadiah yang disediakan khas untukmu.</p><div class="gift"><h3>01 · Buku <em>Tenang</em></h3><p>Semoga buku ini menemanimu mencari ruang untuk bernafas, berehat dan menemukan ketenangan.</p></div><div class="gift"><h3>02 · Earphone</h3><p>Untuk lagu, cerita dan detik kecil yang mahu kamu simpan dekat di hati.</p></div><div class="gift"><h3>03 · Kasut New Balance</h3><p>Untuk setiap langkah, tempat baharu dan perjalanan yang masih menanti.</p></div><p style="font:1.2rem Georgia,serif;color:var(--rose)">Selamat hari lahir. Semoga kamu sentiasa rasa dihargai, disayangi dan tenang. ♡</p><span class="seal">MARKAH AKHIR: ${score}/100</span><div class="actions" style="justify-content:center"><button class="secondary" onclick="location.reload()">Main semula</button></div></div>`}
+show();
+</script></body></html>
